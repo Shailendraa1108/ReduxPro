@@ -1,0 +1,85 @@
+@import "color";
+
+.formOne{
+    background-color: #0c0808;
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
+
+
+form{
+    width: 600px;
+background-color: #7c4dff;        
+border: none;
+border-radius: 8px;
+padding: 3rem;
+box-shadow: rgba(245, 240, 240, 0.35) 0px 5px 15px;
+
+&:hover {
+    animation-name: rotate;
+    animation-duration: 0.1s;
+    animation-delay: 0s;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    font-weight: 700;
+
+}
+
+div{
+    padding: 1rem;
+    border-radius: 5px;
+    input{
+        padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(245, 240, 240, 0.35) 0px 5px 15px;
+    width: 100%;
+    border: none;
+  &::placeholder{
+    font-size: 1rem;
+  }
+  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  transform: scale(0.06s);
+  transition: all 0.3s;
+  
+
+    }
+}
+button{
+display: grid;
+place-items: center;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 10px;
+    color: rgb(14, 1, 1);
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: rgb(219, 197, 217);
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+cursor: pointer;
+    &:hover{
+        background-color: #ffffff;
+    }
+
+}
+}
+
+
+}
